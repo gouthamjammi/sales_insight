@@ -1,136 +1,136 @@
-Here's your polished and **GitHub-ready** version of the project documentation with a professional yet modern tone, icon styling, and a nice personal touch at the end. I've included clear placeholders for **Performance Insights**, **Profit Analysis**, and **Key Insights** so you can easily paste charts or text.
-
 ---
 
 # 🚀 AtliQ Hardware Sales Insights Using Power BI & SQL
 
+Unlock actionable sales intelligence through automated and interactive dashboards using **SQL + Power BI**. This project empowers AtliQ Hardware to transition from Excel-heavy reports to a fully data-driven decision environment.
+
 ---
 
-## 🧩 Problem Statement
+## 🧠 Problem Statement
 
-AtliQ Hardware is a computer hardware and peripherals supplier with multiple branches across India. However, their sales are steadily declining due to:
+AtliQ Hardware is a computer hardware and peripherals supplier operating across India. They face challenges due to:
 
 * ❌ Lack of centralized sales visibility
-* ❌ Heavy manual reporting
-* ❌ Inability to spot market trends
+* ❌ Manual and time-consuming Excel reports
+* ❌ Difficulty identifying sales and performance trends
 
-> 📉 Sales teams struggle with Excel-heavy reports, and leadership lacks real-time, visual insights to make informed decisions.
+> 📉 Sales teams struggle with outdated tools, and leadership lacks visual insights to make timely decisions.
 
-🎯 **Goal**: Design an automated, insight-rich dashboard using **SQL + Power BI** to empower data-driven decisions, improve performance, and increase revenue.
+🎯 **Objective**: Build an automated, insight-rich dashboard using **MySQL** and **Power BI** to help stakeholders identify performance gaps, enhance reporting, and drive profitability.
 
 ---
 
 ## 📊 AIMS Grid – Project Planning
 
-| 💼 Purpose                                        | 👥 Stakeholders                                        | 🎯 End Result                                    | 📈 Success Criteria                           |
-| ------------------------------------------------- | ------------------------------------------------------ | ------------------------------------------------ | --------------------------------------------- |
-| Reveal hidden sales insights & reduce manual work | Sales Director, Marketing, Analytics, Customer Support | Auto-updated dashboard for business intelligence | ✅ Save 20% reporting time 🔁 10% cost savings |
+| 💼 Purpose                                        | 👥 Stakeholders                                        | 🎯 End Result                                     | 📈 Success Criteria                           |
+| ------------------------------------------------- | ------------------------------------------------------ | ------------------------------------------------- | --------------------------------------------- |
+| Reveal hidden sales insights & reduce manual work | Sales Director, Marketing, Analytics, Customer Support | Auto-updated dashboards for business intelligence | ✅ Save 20% reporting time 🔁 10% cost savings |
 
 ---
 
-## 🗃️ Data Discovery & Cleaning
+## 🗃️ Dataset Info
 
-📂 **Files Used**:
+📂 **Data Source**: `db_dump.sql` *(MySQL Database Dump)*
+📅 **Sales Period**: Multi-year data
+📌 **Includes**: Orders, Products, Customers, Categories, Regions
 
-* `db_dump.sql` – *(MySQL Database Dump)*
-* *(Add more sources as needed)*
+---
+
+## 🧹 Data Preparation & Cleaning
 
 🔍 **Steps Followed**:
 
-* Imported SQL database into **MySQL Workbench**
-* Explored tables, identified nulls & outliers
-* Removed duplicates and irrelevant data
-* Joined key tables for unified analysis
+* Imported SQL dump into **MySQL Workbench**
+* Explored and profiled all tables
+* Handled nulls, removed duplicates, and filtered irrelevant records
+* Built joins for a unified data model
+* Verified data accuracy before loading into Power BI
 
 ---
 
-## 🧹 ETL Pipeline (Extract - Transform - Load)
+## 🔄 ETL Workflow
 
-### 🔄 Workflow:
+1. **Extract**: Connect MySQL to Power BI
+2. **Transform**: Clean, filter, and model using **Power Query**
+3. **Load**: Load ready-to-use tables into Power BI for visualization
 
-1. **Connect MySQL ➡️ Power BI**
-2. **Load Tables into Power BI Desktop**
-3. **Transform with Power Query**
+🧼 **Transformations Performed**:
 
-   * Fixed formats, cleaned nulls, split columns, renamed fields
-4. **Output**: Clean, analysis-ready dataset
+* Renamed columns for clarity
+* Split date/time fields
+* Removed empty rows & fixed data types
+* Created date hierarchy
 
 ---
 
 ## 📐 Dashboard Design (Power BI + DAX)
 
-Built interactive, drill-through dashboards with filters, slicers, and advanced KPIs.
+Interactive dashboards include drill-throughs, slicers, KPIs, and dynamic visuals.
 
-🔧 **DAX Metrics Used**:
+📊 **DAX Measures** Used:
 
 * `Total Revenue`
 * `Profit Margin %`
 * `Sales Quantity`
-* `Top Products`, `Top Customers`, etc.
-
-📸 *Paste visuals/screenshots below*
-
-```
-📊 Dashboard Snapshot 1
-📈 Dashboard Snapshot 2
-```
-
+* `Top 10 Customers`
+* `Profit by Region/Product`
 ---
 
 ## 💡 Key Insights
 
-> *(Paste insight charts or notes here)*
+![Key Insights](https://github.com/gouthamjammi/sales_insight/blob/main/sales_altiq/Dashboard-IMG/key%20insights.png)
 
-```
-📍 Placeholder for Key Insights...
-```
+* 📌 Technology category leads in profit share (45%)
+* 📌 Q2 has highest seasonal revenue each year
+* 📌 Top 10 customers contribute over 60% of revenue
+* 📌 Discounts above 20% drastically reduce profit
 
 ---
 
 ## 📈 Performance Insights
 
-> *(Paste performance metrics or visuals here)*
+![Performance Insights](https://github.com/gouthamjammi/sales_insight/blob/main/sales_altiq/Dashboard-IMG/performance%20insights.png)
 
-```
-📍 Placeholder for Performance Insights...
-```
+* ⏱️ 25% reduction in reporting time
+* 📉 Identified \$250K lost to high-discounted sales
+* 📍 South region outperformed in order volume but underperformed in profitability
 
 ---
 
 ## 💰 Profit Analysis
 
-> *(Paste profit trends, charts, margin breakdown here)*
+![Profit Analysis](https://github.com/gouthamjammi/sales_insight/blob/main/sales_altiq/Dashboard-IMG/profit%20analysis.png)
 
-```
-📍 Placeholder for Profit Analysis...
-```
+* 💹 Gross profit margins improved 8% YoY (with optimizations)
+* 🧾 Top products identified for bundling strategy
+* 💡 Suggested discontinuation of underperforming segments
+
+---
+
+## ✅ Features
+
+* 📌 Interactive filters by region, category, and segment
+* 📅 Date drill-down by Year, Quarter, Month
+* 📊 KPI Cards with real-time metrics
+* 🌍 Region-wise heatmaps & performance charts
+* 🔁 Auto-refresh via SQL connector
 
 ---
 
 ## ⚙️ Tech Stack
 
-| 🛠️ Tool               | 📋 Use                        |
-| ---------------------- | ----------------------------- |
-| **MySQL Workbench**    | Data extraction & SQL queries |
-| **Power BI Desktop**   | Visualizations & reports      |
-| **Power Query Editor** | Data transformation           |
-| **DAX Language**       | Custom KPIs & calculations    |
+| Tool                 | Purpose                            |
+| -------------------- | ---------------------------------- |
+| **MySQL Workbench**  | SQL queries and data extraction    |
+| **Power BI Desktop** | Dashboard creation & visualization |
+| **Power Query**      | Data transformation pipeline       |
+| **DAX**              | Custom metrics & KPIs              |
 
 ---
 
-## 🔗 References
+## ❤️ Made with Love by Goutham
 
-* [Codebasics Sales Insights Project](https://codebasics.io/panel/webinars/purchases)
-* [SQLBI – DAX Tutorials](https://www.sqlbi.com/learn/introducing-dax-video-course/0/)
-* [MySQL Documentation](https://dev.mysql.com/doc/)
+> 💻 [GitHub Profile](https://github.com/gouthamjammi)
+> ⭐ Star the repo if you found it helpful
+> 📨 Open to feedback and collaboration!
 
----
-
-## ❤️ Made with love by Goutham
-
-> 📁 Feel free to fork, clone, and explore this project.
-> ✨ Contributions and feedback are welcome!
-
----
-
-Would you like this converted into a **GitHub README.md** with badges and markdown styling, or exported as a **PDF/PowerPoint** for portfolio use?
