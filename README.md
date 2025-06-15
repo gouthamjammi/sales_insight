@@ -79,7 +79,7 @@ Interactive dashboards include drill-throughs, slicers, KPIs, and dynamic visual
 
 ## 💡 Key Insights
 
-![Key Insights](https://github.com/gouthamjammi/sales_insight/blob/main/sales_altiq/Dashboard-IMG/key%20insights.png)
+![Key Insights](https://github.com/gouthamjammi/sales_insight/blob/main/sales/Dashboard-IMG/key%20insights.png)
 
 * 📌 Technology category leads in profit share (45%)  
 * 📌 Q2 has highest seasonal revenue each year  
@@ -90,7 +90,7 @@ Interactive dashboards include drill-throughs, slicers, KPIs, and dynamic visual
 
 ## 📈 Performance Insights
 
-![Performance Insights](https://github.com/gouthamjammi/sales_insight/blob/main/sales_altiq/Dashboard-IMG/performance%20insights.png)
+![Performance Insights](https://github.com/gouthamjammi/sales_insight/blob/main/sales/Dashboard-IMG/performance%20insights.png)
 
 * ⏱️ 25% reduction in reporting time  
 * 📉 Identified $250K lost to high-discounted sales  
@@ -100,7 +100,7 @@ Interactive dashboards include drill-throughs, slicers, KPIs, and dynamic visual
 
 ## 💰 Profit Analysis
 
-![Profit Analysis](https://github.com/gouthamjammi/sales_insight/blob/main/sales_altiq/Dashboard-IMG/profit%20analysis.png)
+![Profit Analysis](https://github.com/gouthamjammi/sales_insight/blob/main/sales/Dashboard-IMG/profit%20analysis.png)
 
 * 💹 Gross profit margins improved 8% YoY (post-optimization)  
 * 🧾 Top products identified for bundling opportunities  
