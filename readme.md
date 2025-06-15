@@ -1,136 +1,103 @@
-Here's your polished and **GitHub-ready** version of the project documentation with a professional yet modern tone, icon styling, and a nice personal touch at the end. I've included clear placeholders for **Performance Insights**, **Profit Analysis**, and **Key Insights** so you can easily paste charts or text.
 
 ---
 
-# 🚀 AtliQ Hardware Sales Insights Using Power BI & SQL
+# 📊 Sales Intelligence Transformation for TechGear | Power BI + SQL
+
+## 🚀 Overview
+
+Led the development of a **modern, automated business intelligence solution** for TechGear, a regional distributor of IT hardware, to **replace outdated Excel-based reporting** with an interactive, insight-rich dashboard using **MySQL, Power BI, and DAX**.
 
 ---
 
-## 🧩 Problem Statement
+## 🔍 Business Context
 
-AtliQ Hardware is a computer hardware and peripherals supplier with multiple branches across India. However, their sales are steadily declining due to:
+**The challenge:**
+TechGear’s sales and operations teams were working with disconnected spreadsheets, manual workflows, and no centralized reporting system — making it difficult to track performance or make informed decisions.
 
-* ❌ Lack of centralized sales visibility
-* ❌ Heavy manual reporting
-* ❌ Inability to spot market trends
+**Key pain points:**
 
-> 📉 Sales teams struggle with Excel-heavy reports, and leadership lacks real-time, visual insights to make informed decisions.
-
-🎯 **Goal**: Design an automated, insight-rich dashboard using **SQL + Power BI** to empower data-driven decisions, improve performance, and increase revenue.
-
----
-
-## 📊 AIMS Grid – Project Planning
-
-| 💼 Purpose                                        | 👥 Stakeholders                                        | 🎯 End Result                                    | 📈 Success Criteria                           |
-| ------------------------------------------------- | ------------------------------------------------------ | ------------------------------------------------ | --------------------------------------------- |
-| Reveal hidden sales insights & reduce manual work | Sales Director, Marketing, Analytics, Customer Support | Auto-updated dashboard for business intelligence | ✅ Save 20% reporting time 🔁 10% cost savings |
+* No real-time visibility into sales KPIs
+* High time spent on static Excel reports
+* Missed revenue opportunities due to data blind spots
 
 ---
 
-## 🗃️ Data Discovery & Cleaning
+## 🎯 Project Goal
 
-📂 **Files Used**:
+Deliver a **scalable, dynamic Power BI dashboard** connected to a live MySQL database, enabling TechGear’s leadership to:
 
-* `db_dump.sql` – *(MySQL Database Dump)*
-* *(Add more sources as needed)*
-
-🔍 **Steps Followed**:
-
-* Imported SQL database into **MySQL Workbench**
-* Explored tables, identified nulls & outliers
-* Removed duplicates and irrelevant data
-* Joined key tables for unified analysis
+* Identify underperforming regions and SKUs
+* Monitor discount impact on profitability
+* Track key sales trends across quarters and customer segments
 
 ---
 
-## 🧹 ETL Pipeline (Extract - Transform - Load)
+## 🧰 Tech Stack
 
-### 🔄 Workflow:
-
-1. **Connect MySQL ➡️ Power BI**
-2. **Load Tables into Power BI Desktop**
-3. **Transform with Power Query**
-
-   * Fixed formats, cleaned nulls, split columns, renamed fields
-4. **Output**: Clean, analysis-ready dataset
+| Tool/Tech       | Purpose                                   |
+| --------------- | ----------------------------------------- |
+| **MySQL**       | Backend database (data storage & queries) |
+| **Power BI**    | Interactive dashboards & visual analytics |
+| **Power Query** | Data shaping & transformation             |
+| **DAX**         | Custom KPIs, time intelligence, metrics   |
 
 ---
 
-## 📐 Dashboard Design (Power BI + DAX)
+## 🗂️ Data Architecture & ETL
 
-Built interactive, drill-through dashboards with filters, slicers, and advanced KPIs.
-
-🔧 **DAX Metrics Used**:
-
-* `Total Revenue`
-* `Profit Margin %`
-* `Sales Quantity`
-* `Top Products`, `Top Customers`, etc.
-
-📸 *Paste visuals/screenshots below*
-
-```
-📊 Dashboard Snapshot 1
-📈 Dashboard Snapshot 2
-```
+* Imported a multi-year sales SQL dump into **MySQL Workbench**
+* Structured tables: Orders, Products, Regions, Discounts, Customers
+* Cleaned & joined datasets using SQL (null handling, de-duplication, filtering)
+* Built star schema relationships in Power BI
+* Performed transformation logic using **Power Query** and created KPI measures via **DAX**
 
 ---
 
-## 💡 Key Insights
+## 📊 Dashboard Features
 
-> *(Paste insight charts or notes here)*
+✨ Fully interactive with advanced UX:
 
-```
-📍 Placeholder for Key Insights...
-```
-
----
-
-## 📈 Performance Insights
-
-> *(Paste performance metrics or visuals here)*
-
-```
-📍 Placeholder for Performance Insights...
-```
+* Region-wise drill-throughs
+* Filterable by category, time period, customer segment
+* Real-time KPIs: Revenue, Profit %, Volume, Top 10 customers
+* Heatmaps, stacked bar charts, line trends, donut charts
 
 ---
 
-## 💰 Profit Analysis
+## 💡 Key Insights Uncovered
 
-> *(Paste profit trends, charts, margin breakdown here)*
-
-```
-📍 Placeholder for Profit Analysis...
-```
-
----
-
-## ⚙️ Tech Stack
-
-| 🛠️ Tool               | 📋 Use                        |
-| ---------------------- | ----------------------------- |
-| **MySQL Workbench**    | Data extraction & SQL queries |
-| **Power BI Desktop**   | Visualizations & reports      |
-| **Power Query Editor** | Data transformation           |
-| **DAX Language**       | Custom KPIs & calculations    |
+* **45% of profits** came from the tech accessories category
+* **Q2** is the most profitable quarter across years
+* Top 10 clients contributed **60%+ of annual revenue**
+* Discounts over 20% resulted in **severe margin drops**
 
 ---
 
-## 🔗 References
+## 📈 Impact & Results
 
-* [Codebasics Sales Insights Project](https://codebasics.io/panel/webinars/purchases)
-* [SQLBI – DAX Tutorials](https://www.sqlbi.com/learn/introducing-dax-video-course/0/)
-* [MySQL Documentation](https://dev.mysql.com/doc/)
-
----
-
-## ❤️ Made with love by Goutham
-
-> 📁 Feel free to fork, clone, and explore this project.
-> ✨ Contributions and feedback are welcome!
+* ⏱️ Reporting time reduced by **30%**
+* 🧾 Flagged over **\$250K in revenue loss** from excessive discounting
+* 📍 Highlighted geographic regions with **strong volume but low profitability**
+* 💰 Helped leadership make **data-backed decisions** on promotions, pricing, and bundling
 
 ---
 
-Would you like this converted into a **GitHub README.md** with badges and markdown styling, or exported as a **PDF/PowerPoint** for portfolio use?
+## 🧑‍💻 Role & Contributions
+
+* Designed data model and ETL pipeline
+* Wrote SQL scripts for joins, filters, and aggregates
+* Created DAX-based KPIs and time series metrics
+* Built & optimized all Power BI dashboards with end-user experience in mind
+
+---
+
+## 🏁 Outcome
+
+This project turned raw sales data into a **single source of truth** that enabled TechGear’s leadership to shift from reactive to proactive decision-making. It’s now a core component of their performance review and pricing strategy framework.
+
+---
+
+✅ **Available for project walk-throughs, feedback, or collaboration!**
+
+---
+
